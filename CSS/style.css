@@ -27,8 +27,9 @@
     width: 100%;
 }
 
-#seclogo {
+.seclogo {
     width: 10%;
+    margin-top: 1.5rem;
 }
 
 .video iframe {
@@ -37,7 +38,11 @@
     /* height: 400px; */
     margin-left: 8%;
     /* box-shadow:   -70px 10px 170px 40px  rgba(0, 136, 255, 0.8); */
-    box-shadow:  -10px 10px 170px 40px  rgba(255, 0, 234, 0.8);
+    box-shadow: -10px 10px 170px 40px rgba(255, 0, 234, 0.8);
+    /* width: 560px;
+    height: 315px; */
+    width: 28rem;
+    height: 20rem;
 }
 
 #sec1 h1 {
@@ -50,52 +55,74 @@
     font-weight: 500;
     font-family: 'Poppins';
 }
+
 /* 
 #sec2 .form {
     display: block;
     margin: auto;
 } */
 
-#inp{
+#inp {
     width: 80%;
     margin: auto;
 }
-#inp label{
+
+#inp label {
     margin-top: 5px;
     font-size: 1.2rem;
 }
-#inp input::placeholder{
-    color: rgb(232, 88, 205);
+
+#inp input::placeholder {
+    /* color: rgb(232, 88, 205); */
+    color: rgb(59, 58, 58);
     text-align: center;
 }
-#inp input{
+
+#inp input {
     text-align: center;
     /* margin: 6px; */
     /* width: 90%; */
     border-radius: 5px;
     border: none;
     border: 2px solid rgb(214, 213, 207);
-    color:rgb(232, 88, 205);
-    font-weight:bold;
+    /* color:rgb(232, 88, 205); */
+    color: black;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(12, 12, 254, 0.3), rgba(226, 43, 192, 0.4));
 }
-#inp .form-select{
+
+#inp .form-select {
     color: rgb(226, 43, 192);
+    color: white;
     text-align: center;
-    font-weight:bold;
+    font-weight: bold;
+    background-color: rgb(171, 82, 255);
 }
-#inp .btn{
+
+#inp .form-select option {
+    background-color: rgb(226, 43, 192, 0.7);
+    font-size: 1.1rem;
+}
+
+#inp .btn {
     /* background-color:rgb(232, 48, 198); */
-    background-image: linear-gradient(to right, rgb(12, 12, 254,0.8), rgba(226, 43, 192,01));
+    background-image: linear-gradient(to right, rgb(12, 12, 254, 0.8), rgba(226, 43, 192, 01));
     color: white;
     font-weight: 600;
     padding: 10px;
     border: none;
     font-size: 1.2rem;
     margin: auto;
+
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px rgb(255, 0, 204);
 }
-#inp .btn:hover{
+
+#inp .btn:hover {
     background-image: linear-gradient(to right, rgba(4, 4, 205, 0.8), rgb(227, 3, 186));
 }
+
 #sec3 {
     color: white;
     background: url(../Images/sec1.png) no-repeat center center/cover;
@@ -111,9 +138,14 @@
     /* font-family: 'Montserrat Alternates', sans-serif;
     font-family: 'Ubuntu', sans-serif;
     font-family: poppins; */
+    /* color: rgb(255, 255, 255);
+    text-shadow: #FC0 1px 0 10px; */
+    /* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; */
+    text-shadow: 1px 1px 2px rgb(255, 0, 238), 0 0 1em rgb(255, 0, 225), 0 0 0.2em rgb(154, 24, 130);
+    text-align: justify;
 }
 
-#col1 {
+/* #col1 {
     width: 50%;
     box-shadow: -10px 10px 25px rgb(158, 157, 157);
     padding-left: 30px;
@@ -121,7 +153,7 @@
     height: 27rem;
     border-radius: 5px;
     margin-left: 40px;
-}
+} */
 
 /* #col1 input, #col1 textarea {
     margin: 6px;
@@ -130,23 +162,23 @@
     border-radius: 5px;
     border: none;
     border: 2px solid rgb(214, 213, 207); */
-    /* height: 55px; */
-    /* width: auto; */
+/* height: 55px; */
+/* width: auto; */
 /* } */
 
-#col1 input[type=button] {
-    /* width: 32%; */
-    color: white;
+/* #col1 input[type=button] { */
+/* width: 32%; */
+/* color: white;
     background-color: hsl(35, 95%, 50%);
     font-weight: bold;
     padding: 13px;
     border: none;
-}
+} */
 
-#col1 #name,
+/* #col1 #name,
 #col1 #email {
     width: 43%;
-}
+} */
 
 #sec2 {
     color: white;
@@ -156,20 +188,164 @@
     background: url(../Images/Sec3/8.png) no-repeat center center/cover;
 }
 
-.social-icon{
-    width: 25px;
-    margin-left:  5px;
+#sec2 h1 {
+    color: rgb(226, 43, 192);
+    text-shadow: rgb(255, 0, 0) 1px 0 10px;
+    /* color: rgb(255, 255, 255);
+    text-shadow: #FC0 1px 0 10px; */
+    width: 100%;
+    text-align: center;
 }
-footer{
+
+.social-icon {
+    width: 25px;
+    margin-left: 5px;
+}
+
+footer {
     background-color: rgb(232, 88, 205);
 }
-.ft-items{
+
+.ft-items {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     color: rgb(255, 255, 255);
     font-size: 1.1rem;
 }
-.ft-items a{
+
+.ft-items a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+@media (max-width:768px) {
+
+    .seclogo {
+        width: 15%;
+        margin-left: 10px;
+        margin-top: 1rem;
+    }
+
+    #sec3-text {
+        padding: 0px;
+        margin: auto;
+        width: 90%;
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        margin-top: 1rem;
+        font-family: ubuntu;
+        text-shadow: 1px 1px 2px rgb(255, 0, 149), 0 0 1em rgb(255, 0, 225), 0 0 0.2em rgb(154, 24, 130);
+
+    }
+
+    #sec3 .row {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #sec3 {
+        /* overflow: hidden; */
+        height: 300px;
+        /* width: 100%; */
+    }
+
+    select option {
+        font-size: 0.6rem !important;
+    }
+
+    #sec2 {
+        height: 500px;
+    }
+
+    #sec2 h1 {
+        font-size: 1rem;
+        /* width: 90%; */
+        color: white;
+        text-shadow: rgb(255, 0, 0) 1px 0 10px;
+
+    }
+
+    #sec2 .col2 h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin: 0px;
+    }
+
+    #sec2 #inp {
+        width: 100%;
+    }
+
+    #sec1 h1 {
+        font-size: 1rem;
+    }
+
+    #sec1 {
+        height: 460px;
+    }
+
+    #sec1 h1 {
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    #sec1 p {
+        font-size: 0.9rem;
+        font-weight: 500;
+        font-family: 'Poppins';
+        padding: 1rem;
+        padding-top: 0px;
+    }
+
+    .video iframe {
+        width: 85%;
+        height: 150px !important;
+        margin-top: 0px;
+        /* box-shadow: -10px 10px 170px 40px rgba(255, 0, 234, 0.8); */
+        box-shadow: 0px 0px 10px 5px rgba(255, 0, 234, 0.8);
+    }
+
+    #inp label {
+        margin-top: 3px;
+        font-size: 0.7rem;
+    }
+
+    #inp input::placeholder {
+        font-size: 0.7rem;
+    }
+
+    #inp input {
+        text-align: center;
+        /* margin: 6px; */
+        /* width: 90%; */
+        font-weight: bold;
+    }
+
+    #inp .form-select {
+        font-size: 0.7rem;
+        /* font-weight:bold; */
+    }
+
+    #inp .btn {
+        font-weight: 600;
+        padding: 3px;
+        font-size: 0.8rem;
+        width: 70% !important;
+        margin: auto;
+        display:block;
+    }
+
+    .form-group input {
+        padding: 3px;
+    }
+
+    .fname,
+    .lname {
+        width: 49%;
+        display: inline-block;
+    }
+    .ft-items {
+        font-size: 0.8rem;
+    }
+
 }

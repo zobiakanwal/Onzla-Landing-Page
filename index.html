@@ -15,6 +15,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,9 +25,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <img id="seclogo" class="mt-5" src="Images/White  (1).png" alt="">
+                    <img class="seclogo" class="mt-md-5" src="Images/White  (1).png" alt="logo">
                 </div>
-                <div class="col-6 col-md-11 mt-5 m-auto">
+                <div class="col-6 col-12 mt-md-5 m-md-auto" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <h1 id="sec3-text">With the tax hikes happening, recession already amongst us and the constant
                         uncertainty of the
                         global economy, everyone should have an alternative source of income, take charge of their
@@ -40,18 +45,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <img id="seclogo" class="mt-5" src="Images/White  (1).png" alt="">
+                    <img class="seclogo" class="mt-md-5" src="Images/White  (1).png" alt="logo">
                 </div>
-                <div class="col-6 mt-5">
-                    <h1>IT'S TIME TO SHOWCASE YOUR SKILLSETS AND MONETISE WHAT YOU
-
-                        LOVE DOING!</h1>
+                <div class="col-md-6 mt-md-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <h1>IT'S TIME TO SHOWCASE YOUR SKILLSETS AND MONETISE WHAT YOU LOVE DOING!</h1>
                     <p class="lead">Join thousands of Talents in Singapore and offer your unique services to potential
                         paying customers today!</p>
                 </div>
-                <div class="col-6 videosec">
-                    <div class="i-frame video">
-                        <iframe width="560" height="315" src="Images/video1.mp4" title="YouTube video player"
+                <div class="col-md-6 videosec">
+                    <div class="i-frame video"  data-aos="fade-left">
+                        <!-- <iframe width="560" height="315" src="https://youtu.be/7XRD8zwPu8s" title="YouTube video player" -->
+                        <iframe src="/Images/video1.mp4" title="YouTube video player"
                             frameborder=10
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                         <div class="stand-1"></div>
@@ -65,44 +69,48 @@
 
     <div class="container-fluid" id="sec2">
         <div class="container">
-            <div>
-                <div class="row">
-                    <div class="col-12">
-                        <img id="seclogo" class="mt-5" src="Images/White  (1).png" alt="">
-                    </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <img class="seclogo" class="mt-md-5" src="Images/White  (1).png" alt="logo">
                 </div>
-                <div class="row p-md-5 p-sm-2 ">
-                    <div class="col-md-6 col1 pt-md-4">
+            </div>
+            <div>
+                <div class="row p-md-5">
+                    <div class="col-md-6 col1 pt-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <h1>Take the first step now and join thousands of Talents in Singapore and offer your exclusive
                             services
                             to potential paying customers today!</h1>
                     </div>
 
 
-                    <div class="col-md-6 col2">
-
-
-                        <form action="https://onzla.us21.list-manage.com/subscribe/post?u=c8dc20b5871df9d44480383e8&amp;id=ce52cc7290&amp;f_id=008bd4e1f0" method="post">
+                    <div class="col-md-6 col2"  data-aos="zoom-out-left">
+                        <form
+                            action="https://onzla.us21.list-manage.com/subscribe/post?u=c8dc20b5871df9d44480383e8&amp;id=ce52cc7290&amp;f_id=008bd4e1f0"
+                            method="post">
                             <h2 class="text-center">Sign-up for a Free Space!</h2>
                             <div id="inp" class="fw-semibold">
                                 <label for="talent">Your Talent</label>
-                                <select class="form-select" id="talent" name="MMERGE3" aria-label="Default select example">
-                                    <option selected>Your Talent</option>
-                                    <option value="Baking">Baking</option>
-                                    <option value="Cooking">Cooking</option>
-                                    <option value="Sewing">Sewing</option>
+                                <select class="form-select" id="talent" name="MMERGE3"
+                                    aria-label="Default select example">
+                                    <div id="opt">
+                                        <option selected>Your Talent</option>
+                                        <option value="Baking">Baking</option>
+                                        <option value="Cooking">Cooking</option>
+                                        <option value="Sewing">Sewing</option>
+                                    </div>
                                 </select>
-                                <div class="form-group ">
+                                <div class="form-group fname">
                                     <label for="fname">First Name</label>
                                     <input type="text" class="form-control" id="fname" name="FNAME"
                                         placeholder="First Name">
                                 </div>
-                                <div class="form-group ">
+                                <div class="form-group lname">
                                     <label for="lname">Last Name</label>
                                     <input type="text" class="form-control" id="lname" name="LNAME"
                                         placeholder="Last Name">
                                 </div>
-                                <div class="form-group ">
+                                <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="email" class="form-control" id="email" name="EMAIL"
                                         placeholder="Email">
@@ -111,11 +119,12 @@
                                     <label for="phone">Phone</label>
                                     <input type="tel" class="form-control" id="phone" name="PHONE" placeholder="Phone">
                                 </div>
-                                <div> 
+                                <div>
                                     <!-- <a href="#" class="btn mt-4 w-100">Showcase My Talent Now!</a> -->
-                                    <input type="submit" value="Showcase My Talent Now!" name="subscribe" id="mc-embedded-subscribe" class="btn mt-4 w-100">
+                                    <input type="submit" value="Showcase My Talent Now!" name="subscribe"
+                                        id="mc-embedded-subscribe" class="btn mt-4 w-100">
                                 </div>
-                            
+
                             </div>
 
                             <!-- <div id="col1">
@@ -140,7 +149,7 @@
 
 
 
-                
+
             </div>
         </div>
 
@@ -169,7 +178,13 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[3]='MMERGE3';ftypes[3]='dropdown';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[3] = 'MMERGE3'; ftypes[3] = 'dropdown'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+  
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>
