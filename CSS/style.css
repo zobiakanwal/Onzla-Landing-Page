@@ -130,8 +130,10 @@
 }
 
 #sec2 h1 {
-    color: rgb(226, 43, 192);
-    text-shadow: rgb(255, 0, 0) 1px 0 10px;
+    /* color: rgb(226, 43, 192);
+     text-shadow: rgb(255, 0, 0) 1px 0 10px;  */
+    text-shadow: 1px 1px 2px rgb(255, 0, 238), 0 0 1em rgb(255, 0, 225), 0 0 0.2em rgb(154, 24, 130);
+
     /* color: rgb(255, 255, 255);
     text-shadow: #FC0 1px 0 10px; */
     width: 100%;
